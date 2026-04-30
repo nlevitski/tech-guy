@@ -1,0 +1,28 @@
+{
+  "name": "tech-guy",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "bun@1.3.9",
+  "scripts": {
+    "dev": "next dev --port 3015",
+    "build": "next build && rm -rf .next/standalone/.next/static .next/standalone/public && mkdir -p .next/standalone/.next && cp -R .next/static .next/standalone/.next/static && cp -R public .next/standalone/public",
+    "start": "PORT=3015 HOSTNAME=0.0.0.0 bun .next/standalone/server.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "next": "16.2.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^22.16.5",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.32.0",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,19 @@
+services:
+  tech-guy:
+    build:
+      context: .
+    container_name: tech-guy
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+      HOSTNAME: 0.0.0.0
+      PORT: "3015"
+    ports:
+      - "3015:3015"
+    networks:
+      - lignin
+    restart: unless-stopped
+
+networks:
+  lignin:
+    external: true
