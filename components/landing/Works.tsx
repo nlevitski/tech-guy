@@ -1,7 +1,7 @@
 import Image, { type StaticImageData } from "next/image";
-import work1 from "@/public/images/work-1.jpg";
-import work2 from "@/public/images/work-2.jpg";
-import work3 from "@/public/images/work-3.jpg";
+import work1 from "@/public/images/work-1.webp";
+import work2 from "@/public/images/work-2.webp";
+import work3 from "@/public/images/work-3.webp";
 
 const works: Array<{
   src: StaticImageData;

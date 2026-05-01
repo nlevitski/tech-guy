@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Award, Users, Wrench } from "lucide-react";
-import masterPortrait from "@/public/images/master-portrait.jpg";
+import masterPortrait from "@/public/images/master-portrait.webp";
 
 const stats = [
   { icon: Wrench, value: "10+", label: "лет опыта" },

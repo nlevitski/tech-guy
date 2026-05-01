@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Clock, Receipt, ShieldCheck } from "lucide-react";
-import heroImage from "@/public/images/hero-repair.jpg";
+import heroImage from "@/public/images/hero-repair.webp";
 
 export default function Hero() {
   return (
@@ -54,6 +54,8 @@ export default function Hero() {
             src={heroImage}
             alt="Рабочее место мастера по ремонту компьютеров"
             priority
+            fetchPriority="high"
+            loading="eager"
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="h-auto w-full rounded-3xl shadow-glow animate-float"
           />

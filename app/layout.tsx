@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: site.description,
     images: [
       {
-        url: "/images/hero-repair.jpg",
+        url: "/images/hero-repair.webp",
         width: 1280,
         height: 960,
         alt: "Рабочее место мастера по ремонту компьютеров",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: site.title,
     description: site.description,
-    images: ["/images/hero-repair.jpg"],
+    images: ["/images/hero-repair.webp"],
   },
   robots: {
     index: true,
@@ -83,7 +83,7 @@ const jsonLd = {
   url: site.url,
   telephone: site.phone,
   description: site.description,
-  image: `${site.url}/images/hero-repair.jpg`,
+  image: `${site.url}/images/hero-repair.webp`,
   areaServed: {
     "@type": "Country",
     name: "Belarus",
