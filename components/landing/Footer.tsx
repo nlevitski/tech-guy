@@ -2,6 +2,8 @@ import { MonitorCog, Phone, Send } from "lucide-react";
 import { site } from "@/lib/site";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="border-t border-border bg-secondary/30 py-10">
       <div className="container px-4">
@@ -28,7 +30,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-6 text-center text-xs text-muted-foreground">
-          © 2026 {site.name}. Все права защищены.
+          © {currentYear} {site.name}. Все права защищены.
         </div>
       </div>
     </footer>
