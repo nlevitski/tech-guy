@@ -6,8 +6,10 @@ import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import Services from "@/components/landing/Services";
 import Works from "@/components/landing/Works";
+import { homeJsonLd, homeMetadata } from "@/lib/seo";
 
 export const dynamic = "force-static";
+export const metadata = homeMetadata;
 
 export default function Home() {
   return (
@@ -22,6 +24,11 @@ export default function Home() {
         <Contacts />
       </main>
       <Footer />
+      <script
+        id="site-json-ld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd).replace(/</g, "\\u003c") }}
+      />
     </div>
   );
 }

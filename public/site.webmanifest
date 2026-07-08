@@ -1,7 +1,7 @@
 {
   "name": "Компьютерщик",
   "short_name": "Компьютерщик",
-  "description": "Ремонт компьютеров и ноутбуков",
+  "description": "Ремонт и настройка компьютеров, ноутбуков, принтеров и другой техники.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f8fafc",

@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Страница не найдена",
+  description: "Страница не найдена. Вернитесь на главную, чтобы посмотреть услуги и контакты мастера.",
+};
 
 export default function NotFound() {
   return (
